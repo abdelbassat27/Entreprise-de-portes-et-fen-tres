@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الألمنيوم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet"> <!-- ربط خط تاجاوَل -->
+    <link rel="stylesheet" href="styles.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+    <header>
+    <div class="container">
+        <h1>شركة الأبواب والنوافذ</h1>
+        <!-- أيقونة الهامبرغر -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#store">متجر الألواح والخزانات</a></li>
+                <li><a href="#pricing">الأسعار</a></li>
+                <li><a href="#team">فريق العمل</a></li>
+                <li><a href="#order">الطلب عن بعد</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <section id="products">
+        <h2>منتجاتنا</h2>
+        <div class="product-category">
+            <h3>أبواب الألمنيوم</h3>
+            <div class="product">
+                <img src="images/door1.jpg" alt="باب ألمنيوم موديل 1">
+                <h4>باب موديل 1</h4>
+                <p>وصف مختصر للباب موديل 1.</p>
+            </div>
+            <div class="product">
+                <img src="images/door2.jpg" alt="باب ألمنيوم موديل 2">
+                <h4>باب موديل 2</h4>
+                <p>وصف مختصر للباب موديل 2.</p>
+            </div>
+            <!-- أضف المزيد من الأبواب حسب الحاجة -->
+        </div>
+
+        <div class="product-category">
+            <h3>خزانات الألمنيوم</h3>
+            <div class="product">
+                <img src="images/cabinet1.jpg" alt="خزانة ألمنيوم موديل 1">
+                <h4>خزانة موديل 1</h4>
+                <p>وصف مختصر للخزانة موديل 1.</p>
+            </div>
+            <div class="product">
+                <img src="images/cabinet2.jpg" alt="خزانة ألمنيوم موديل 2">
+                <h4>خزانة موديل 2</h4>
+                <p>وصف مختصر للخزانة موديل 2.</p>
+            </div>
+            <!-- أضف المزيد من الخزانات حسب الحاجة -->
+        </div>
+
+        <div class="product-category">
+            <h3>نوافذ الألمنيوم</h3>
+            <div class="product">
+                <img src="images/window1.jpg" alt="نافذة ألمنيوم موديل 1">
+                <h4>نافذة موديل 1</h4>
+                <p>وصف مختصر للنافذة موديل 1.</p>
+            </div>
+            <div class="product">
+                <img src="images/window2.jpg" alt="نافذة ألمنيوم موديل 2">
+                <h4>نافذة موديل 2</h4>
+                <p>وصف مختصر للنافذة موديل 2.</p>
+            </div>
+            <!-- أضف المزيد من النوافذ حسب الحاجة -->
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>الأسعار</h2>
+        <div class="pricing-table">
+            <div class="pricing-item">
+                <h3>باب ألمنيوم</h3>
+                <p>السعر: <span>500 ريال</span></p>
+            </div>
+            <div class="pricing-item">
+                <h3>خزانة ألمنيوم</h3>
+                <p>السعر: <span>800 ريال</span></p>
+            </div>
+            <div class="pricing-item">
+                <h3>نافذة ألمنيوم</h3>
+                <p>السعر: <span>300 ريال</span></p>
+            </div>
+            <!-- أضف المزيد من الأسعار حسب الحاجة -->
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>فريق العمل</h2>
+        <div class="team-member">
+            <img src="images/team1.jpg" alt="عضو الفريق 1">
+            <h3>محمد أحمد</h3>
+            <p>مدير المبيعات</p>
+        </div>
+        <div class="team-member">
+            <img src="images/team2.jpg" alt="عضو الفريق 2">
+            <h3>سارة علي</h3>
+            <p>مصممة المنتجات</p>
+        </div>
+        <div class="team-member">
+            <img src="images/team3.jpg" alt="عضو الفريق 3">
+            <h3>خالد يوسف</h3>
+            <p>مدير اللوجستيات</p>
+        </div>
+        <!-- أضف المزيد من أعضاء الفريق حسب الحاجة -->
+    </section>
+
+    <section id="order">
+        <h2>طلب عن بعد</h2>
+        <form id="orderForm">
+            <label for="product">اختر المنتج:</label>
+            <select id="product" name="product">
+                <option value="باب ألمنيوم">باب ألمنيوم</option>
+                <option value="خزانة ألمنيوم">خزانة ألمنيوم</option>
+                <option value="نافذة ألمنيوم">نافذة ألمنيوم</option>
+            </select>
+            <label for="address">عنوان التوصيل:</label>
+            <input type="text" id="address" name="address" required>
+            <label for="payment">طريقة الدفع:</label>
+            <select id="payment" name="payment">
+                <option value="الطريقة الذهبية">الطريقة الذهبية</option>
+                <option value="دفع عند الاستلام">دفع عند الاستلام</option>
+            </select>
+            <button type="submit">إرسال الطلب</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>تواصل معنا</h2>
+        <p>يمكنك التواصل مع المدير عبر البريد الإلكتروني: <a href="mailto:manager@example.com">manager@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 متجر الألمنيوم. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- ربط ملف JavaScript -->
+</body>
+</html>
